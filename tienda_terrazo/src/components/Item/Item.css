@@ -1,0 +1,42 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
+
+.List{
+    display: inline-flex;
+}
+.List-Card{
+    width: 350px;
+    height: 500px;
+    box-shadow: 0 15px 30px 1px rgba(128, 128, 128, 0.31);
+    text-align: center;   
+    background-color: bisque;
+    border-radius: 10px;
+    margin: 10px;
+    font-style: italic;
+    padding: 3px;
+    align-content: space-around;
+    
+    
+}   
+
+.List-titulo{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.List-precio{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.List-button{
+    margin: 5px;
+    padding: 5px;
+    font-style: italic ;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: double;
+}
+
+
+
