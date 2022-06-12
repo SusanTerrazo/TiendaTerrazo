@@ -1,0 +1,69 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
+
+
+.Titulo{
+  font-size: 40px;
+  margin-top: 5px;
+  font-family: Segoe UI;
+  color: blueviolet;
+}
+
+.Subtitulo{
+  font-size: 30px;
+  font-weight: 500  ;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.Parrafo{
+  list-style: armenian;
+  margin-top: 25px;
+  text-align: justify;
+  font-size: 15px;
+}
+
+.precio{
+  font-size: 25px;
+  font-weight: 800;
+  margin-top: 25px;
+  color: blue;
+}
+
+.Card{
+    width: 750px;
+    height: 450px;
+    box-shadow: 0 15px 30px 1px rgba(128, 128, 128, 0.31);
+    display: flex;
+    background-color: pink;
+    border-radius: 10px;
+    margin: auto;
+    font-style: italic;
+    padding: 3px;
+    align-self: center;
+    margin-top: 20px;
+    
+}
+
+.Card-Detalle{
+  align-items: center;
+  margin: auto;
+  height: 400px;
+  width: 400px;
+
+  
+}
+
+.card-descripcion{
+  padding: 20px;
+}
+
+.Detail-button{
+  margin: 5px;
+  padding: 10px;
+  font-style: italic ;
+  font-size: 18px;
+  border-radius: 5px;
+  text-decoration: double;
+  margin-top: 40px;
+}
