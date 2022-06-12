@@ -16,7 +16,7 @@ const ItemDetail = ({id, name, price, img, description}) => {
                     <p className='precio'>S/ {price}</p>
                 </div>
                 <button className='Detail-button'>AÑADIR AL CARRITO</button>
-            </div>
+            </div> 
             
             
 

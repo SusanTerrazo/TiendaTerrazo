@@ -1,5 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
-@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
+
 
 .List{
     display: inline-flex;
@@ -15,6 +14,7 @@
     font-style: italic;
     padding: 3px;
     align-content: space-around;
+    margin-top: 50px;
     
     
 }   
@@ -22,6 +22,7 @@
 .List-titulo{
     font-size: 30px;
     font-weight: 500;
+    
 }
 
 .List-precio{

@@ -8,6 +8,22 @@
   text-align: center;
 }
 
+.nav{
+  display: inline-flex;
+  position: relative;
+  padding: 20px;
+  width: 100%;
+  
+}
+
+.menu{
+  position: absolute;
+  display: inline-block;
+  width: 95%;
+  text-align: right;
+  margin-right: 50px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

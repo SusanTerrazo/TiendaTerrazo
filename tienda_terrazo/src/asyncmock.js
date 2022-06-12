@@ -14,7 +14,7 @@ const products = [
         id: '2',
         name: 'Camisa leñadora',
         price: 100,
-        category: 'damas',
+        category: 'ofertas',
         img: 'https://scontent.fjau2-1.fna.fbcdn.net/v/t39.30808-6/282054689_548789090237901_1155466115921357191_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeFCELsQ06sZdO6pCOs6o3lAjigng042tL-OKCeDTja0vzv8hW8-GAs-h1UdnAwXC00CBcelnj03nXaajBslBO5P&_nc_ohc=BBoolCxaBY0AX-qZmBw&tn=lnf9V0pBD0SaiWVw&_nc_ht=scontent.fjau2-1.fna&oh=00_AT8wJUQfOKdwWtrfXXYFkdtHsicqmBuVz1M0fBAxrGRxww&oe=62A193D4',
         stock: 15,
         description: 'Camisa leñadora para damas',
@@ -26,7 +26,7 @@ const products = [
         id: '3',
         name: 'Pijama Algodon',
         price: 120,
-        category: 'varones',
+        category: 'caballeros',
         img: 'https://scontent.fjau2-1.fna.fbcdn.net/v/t39.30808-6/284175297_2542735422528436_2768756370820672598_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeGW4BEkEIM6hAZ-LA-_yshywis9iEXcRlzCKz2IRdxGXG5cjVqnXIAb1tK6rXC6kBKumpRzfKT058l9VJQXeIPq&_nc_ohc=SO2_hQzvdcYAX_r2dVi&_nc_ht=scontent.fjau2-1.fna&oh=00_AT9Jm0yo0qClyB7dF350GhlRzYQfsmvoyeYNUVh16JGhmA&oe=62A11930',
         stock: 10,
         description: 'Pijama en algodon para varon',
@@ -55,6 +55,15 @@ export const getProducts = () => {
 
 }
 
+export const getProductByCategory = (categoryId) => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(products.filter(prod => prod.category === categoryId))
+        }, 500)
+    })
+
+}
+
 export const getProductById = (id) => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
@@ -63,3 +72,5 @@ export const getProductById = (id) => {
     })
 
 }
+
+
