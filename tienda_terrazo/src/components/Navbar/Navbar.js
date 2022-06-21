@@ -1,14 +1,15 @@
  import ButtonNav from "../ButtonNav/ButtonNav"
- import CartWidget from "../CartWidget/CartWidget"
+ import Logo from "../Logo/Logo"
  import {Link} from 'react-router-dom'
+import CartWidget from "../CartWidget/CartWidget"
 
  
  const Navbar = (props) => {
-    console.log(props)
+    
 
     return(
         <nav className="nav" >
-            <div className="img" ><CartWidget/></div>
+            <div className="img" ><Logo/></div>
             <Link to='/'>
                 <h1 style ={{color: 'pink', fontSize: 50}} >{props.title}</h1>
             </Link>
@@ -18,7 +19,9 @@
                 <Link to='/category/caballeros'><ButtonNav label='CABALLEROS'/></Link>
                 <Link to='/category/ofertas'><ButtonNav label='OFERTAS'/></Link>
                 <Link to='/category/temporada'><ButtonNav label='DE TEMPORADA'/></Link> 
+                
             </div>
+            <CartWidget/>
             
         </nav>
         

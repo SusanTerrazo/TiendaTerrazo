@@ -17,11 +17,12 @@
 }
 
 .menu{
-  position: absolute;
-  display: inline-block;
+  
+  display: flex;
   width: 95%;
-  text-align: right;
+  justify-content: center;
   margin-right: 50px;
+  align-items: center;
 }
 
 .App-logo {

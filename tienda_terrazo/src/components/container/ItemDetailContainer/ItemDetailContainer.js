@@ -16,8 +16,6 @@ const ItemDetailContainer = () => {
         } )
     }, [])
 
-    console.log(product)
-
     return (
         <>
             <h1> Detalle del producto </h1>

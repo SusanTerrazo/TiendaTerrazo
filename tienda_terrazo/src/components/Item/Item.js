@@ -1,7 +1,10 @@
 import './Item.css'
+import { useContext } from 'react'
 import { Link } from 'react-router-dom'
 
+
 const Item = ({id, name, img, price }) => {
+
     return(
         <div className='List'>
              <div className="List-Card">

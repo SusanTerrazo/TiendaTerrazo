@@ -1,7 +1,18 @@
 import './ItemDetail.css'
+import ItemCount from '../ItemCount/ItemCount'
+import { useContext } from 'react'
+import CartContext from '../../contex/CartContext'
 
-const ItemDetail = ({id, name, price, img, description}) => {
 
+const ItemDetail = ({id, name, price, img, description, stock}) => {
+
+const {addItem} = useContext(CartContext)
+
+const handleOnAdd = (quantity) => {
+        addItem({id, name, price, quantity})
+        
+    }
+    
     return (
         <div className="Card">         
             <img style={{height: '90%', margin: 'auto'}} src={img} alt={name}/>
@@ -15,13 +26,12 @@ const ItemDetail = ({id, name, price, img, description}) => {
                     
                     <p className='precio'>S/ {price}</p>
                 </div>
-                <button className='Detail-button'>AÑADIR AL CARRITO</button>
+                { <div>
+                    <ItemCount stock={stock} onAdd={handleOnAdd}/>
+                </div>}
             </div> 
             
-            
-
-
-        </div>
+         </div>
     )  
 }
 

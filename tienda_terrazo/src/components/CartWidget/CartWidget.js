@@ -1,5 +1,17 @@
-const CartWidget = (props) => {
-    return<img style={{width: 100, height:100}} src="https://i.pinimg.com/originals/50/c6/62/50c662ef92cfb9b3ae09697c3eacd8f8.jpg"/>
-} 
+import './CartWidget.css'
+import { useContext } from 'react'
+import CartContext from '../../contex/CartContext'
+
+const CartWidget = () => {
+
+    const { getCartQuantity, totalQuantity}   = useContext(CartContext)
+    
+    return(
+        <div className="CartWidget">
+            <img src="/images/shopping-cart-icon.png" alt="cart" className="CartImg"/>
+            { totalQuantity }
+        </div>
+    )
+}
 
 export default CartWidget
