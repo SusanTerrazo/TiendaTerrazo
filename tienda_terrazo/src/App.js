@@ -20,6 +20,7 @@ function App() {
               <Route path='/' element={<ItemListContainer greeting='BIENVENIDOS A SU TIENDA VIRTUAL' />} />
               <Route path='/category/:categoryId' element={<ItemListContainer/>} />
               <Route path='/detail/:productId' element={<ItemDetailContainer />}/>
+              <Route path='/cart' element={<h1>CART</h1>} ></Route>
           </Routes>
         </BrowserRouter>
       </CartProvider>

@@ -67,3 +67,12 @@
   text-decoration: double;
   margin-top: 40px;
 }
+
+.btnTerminar {
+  background-color: blueviolet;
+  text-decoration: none;
+  color: aliceblue;
+  padding:8px 12px;
+  border-radius: 8px;
+  
+}

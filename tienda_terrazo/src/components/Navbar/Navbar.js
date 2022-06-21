@@ -18,10 +18,11 @@ import CartWidget from "../CartWidget/CartWidget"
                 <Link to='/category/damas' ><ButtonNav label='DAMAS'/></Link>
                 <Link to='/category/caballeros'><ButtonNav label='CABALLEROS'/></Link>
                 <Link to='/category/ofertas'><ButtonNav label='OFERTAS'/></Link>
-                <Link to='/category/temporada'><ButtonNav label='DE TEMPORADA'/></Link> 
+                <Link to='/category/temporada'><ButtonNav label='DE TEMPORADA'/></Link>
+                
                 
             </div>
-            <CartWidget/>
+            <Link to='/cart'><CartWidget/></Link>
             
         </nav>
         
