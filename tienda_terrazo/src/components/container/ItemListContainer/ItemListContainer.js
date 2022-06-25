@@ -35,7 +35,7 @@ const ItemListContainer = (props) => {
         
     }, [categoryId])
 
-    if(loading){
+    if(loading){        //Rendering condicional
         return <h1>Cargando...</h1>
 
         
@@ -44,7 +44,11 @@ const ItemListContainer = (props) => {
     return (
         <div>
             <h2>{props.greeting}</h2>
-            <ItemList  products={products}/>
+            {products.length > 0
+            ?<ItemList  products={products}/>       //validacion con ternario--verdadero
+            : <h1>No existen productos para mostrar</h1> //falso
+            }
+            
         </div>
     
 

@@ -11,7 +11,7 @@ import CartWidget from "../CartWidget/CartWidget"
         <nav className="nav" >
             <div className="img" ><Logo/></div>
             <Link to='/'>
-                <h1 style ={{color: 'pink', fontSize: 50}} >{props.title}</h1>
+                <h1 style ={{color: 'pink', fontSize: 50, textDecoration: 'none'}} >{props.title}</h1>
             </Link>
             
             <div className="menu">
