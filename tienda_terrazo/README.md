@@ -2,6 +2,6 @@ Tienda de ropa
 
 Adjunto gif de ejecucion de pagina
 
-![](/tienda_terrazo/src/Multimedia/20220611_234654.gif)
+![](/tienda_terrazo/src/Multimedia/20220715_231227.gif)
 
 ### 
