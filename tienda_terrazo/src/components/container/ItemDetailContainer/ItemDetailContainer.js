@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react"
-import { getProductById } from "../../../asyncmock"
 import ItemDetail from "../../ItemDetail/ItemDetail"
 import { useParams } from "react-router-dom"
-
 import { getDoc, doc } from "firebase/firestore"
 import { db } from "../../../services/firebase"
 
@@ -26,9 +24,7 @@ const ItemDetailContainer = () => {
         }).finally(() => {
             setLoading(false)
         })
-        // getProductById (params.productId).then(response => {
-        //     setProduct(response)
-        // } )
+       
     }, [productId])
 
     if(loading) {

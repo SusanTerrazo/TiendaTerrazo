@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react'
-import { getProducts, getProductByCategory } from '../../../asyncmock'
 import ItemList from '../../ItemList/ItemList'
 import { useParams } from 'react-router-dom'
-
 import { getDocs, collection, query, where } from 'firebase/firestore'
 import { db } from '../../../services/firebase'
 
@@ -33,27 +31,10 @@ const ItemListContainer = (props) => {
             setLoading(false)
         })
 
-        // if(!categoryId){
-        //     getProducts().then(response => {
-        //         setProducts(response)
-        //     }).catch(error =>{
-        //         console.log(error)
-        //     }).finally(() => {
-        //         setLoading(false)
-        //     })
-        // } else {
-        //     getProductByCategory (categoryId).then(response => {
-        //         setProducts(response)
-        //     }).catch(error =>{
-        //         console.log(error)
-        //     }).finally(() => {
-        //         setLoading(false)
-        //     })
-        // }
-        
+               
     }, [categoryId])
 
-    if(loading){        //Rendering condicional
+    if(loading){        
         return <h1>Cargando...</h1>
 
         
@@ -63,8 +44,8 @@ const ItemListContainer = (props) => {
         <div>
             <h2>{props.greeting}</h2>
             {products.length > 0
-            ?<ItemList  products={products}/>       //validacion con ternario--verdadero
-            : <h1>No existen productos para mostrar</h1> //falso
+            ?<ItemList  products={products}/>       
+            : <h1>No existen productos para mostrar</h1> 
             }
             
         </div>

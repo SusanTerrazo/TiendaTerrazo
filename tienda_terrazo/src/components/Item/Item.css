@@ -5,7 +5,7 @@
 }
 .List-Card{
     width: 350px;
-    height: 500px;
+    height: 550px;
     box-shadow: 0 15px 30px 1px rgba(128, 128, 128, 0.31);
     text-align: center;   
     background-color: bisque;
@@ -22,12 +22,16 @@
 .List-titulo{
     font-size: 30px;
     font-weight: 500;
+    text-transform: uppercase;
+    color: rgb(131, 83, 175);
     
 }
 
 .List-precio{
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 600;
+    padding: 5px;
+
 }
 
 .List-button{
@@ -39,5 +43,12 @@
     text-decoration: double;
 }
 
+.Option {
+    background-color: blueviolet;
+    text-decoration: none;
+    color: aliceblue;
+    padding:8px 12px;
+    border-radius: 8px;
+}
 
 

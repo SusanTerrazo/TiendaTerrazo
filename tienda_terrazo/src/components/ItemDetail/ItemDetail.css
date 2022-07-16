@@ -5,8 +5,9 @@
 .Titulo{
   font-size: 40px;
   margin-top: 5px;
-  font-family: Segoe UI;
+  font-family:Segoe UI;
   color: blueviolet;
+  text-transform: uppercase;
 }
 
 .Subtitulo{

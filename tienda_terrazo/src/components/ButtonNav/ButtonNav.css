@@ -1,0 +1,9 @@
+.ButtonNav {
+    margin: 10px 20px;
+    padding: 15px 25px;
+    border-radius: 8px;
+    border-style: none;
+    color: aliceblue;
+    background-color: blueviolet;
+    font-weight: 600;
+}
